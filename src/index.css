@@ -28,7 +28,6 @@ body {
   height: fit-content;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  /* grid-auto-rows: 300px; */
   gap: 10px;
 }
 
@@ -45,6 +44,8 @@ body {
 
 .item img {
   width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
@@ -116,6 +117,36 @@ body {
     background-color: #198754;
     box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.553);
   }
+}
+
+.more-button-container {
+  display: flex;
+  justify-content: end;
+  padding-right: 15px;
+  text-align: center;
+}
+
+/* more button styles */
+.more {
+  background-color: #f9f8fa;
+  border: 1px solid rgba(128, 128, 128, 0.619);
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.797);
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+}
+
+.more:hover {
+  background-color: #198754;
+  color: white;
+}
+
+.more:focus {
+  border-color: #198754;
+  color: white;
+  background-color: #198754;
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.553);
 }
 
 /* footer component css */
